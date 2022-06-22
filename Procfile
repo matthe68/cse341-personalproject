@@ -1,1 +1,1 @@
-web: npm run swagger && npm start
+web: npm start

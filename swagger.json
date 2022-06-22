@@ -5,7 +5,7 @@
     "description": "Individual 5-8 Activity",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-personalproject.herokuapp.com",
   "basePath": "/",
   "schemes": [
     "http"

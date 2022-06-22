@@ -1,36 +1,41 @@
 {
-  "name": "cse341-node",
+  "name": "cse341-personalproject",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js",
     "start": "node app.js",
-    "swagger": "node ./swagger.js"
+    "swagger": "node ./swagger.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matthe68/cse341-node.git"
+    "url": "git+https://github.com/matthe68/cse341-personalproject"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matthe68/cse341-node/issues"
+    "url": "https://github.com/matthe68/cse341-personalproject/issues"
   },
-  "homepage": "https://github.com/matthe68/cse341-node#readme",
+  "homepage": "https://github.com/matthe68/cse341-personalproject#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "mangodb": "^1.0.0",
     "mongodb": "^4.7.0",
-    "mongoose": "^6.4.0",
     "swagger-ui-express": "^4.4.0"
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "nodemon": "^2.0.16",
+    "prettier": "^2.5.1",
     "swagger-autogen": "^2.21.3"
   }
 }

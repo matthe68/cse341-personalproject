@@ -1,7 +1,7 @@
 const routes = require('express').Router();
 const bucketList = require('./bucket-list');
 
-routes.use('/', require('./swagger'));
+routes.use('/swagger', require('./swagger'));
 routes.use('/bucket-list', bucketList);
 
 

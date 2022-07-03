@@ -1,11 +1,11 @@
 const swaggerAutogen = require('swagger-autogen')();
 
- const doc = process.env.PORT ? {
+ let doc = process.env.PORT ? {
  info: {
  title: 'Bucket List API',
  description: 'Individual 5-8 Activity',
  },
- host: process.env.PORT,
+ host: 'https://cse341-personalproject.herokuapp.com',
  schemes: ['https'],
 } :
 {
@@ -15,6 +15,9 @@ const swaggerAutogen = require('swagger-autogen')();
   },
   host: "localhost:3000",
   schemes: ['http'],
+};
+doc["securityDefinitions"] = {
+
 };
 
 console.log("STARTING SWAGGER AUTO GEN: doc: ", doc);

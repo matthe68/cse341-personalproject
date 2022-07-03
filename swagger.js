@@ -5,7 +5,7 @@ const swaggerAutogen = require('swagger-autogen')();
  title: 'Bucket List API',
  description: 'Individual 5-8 Activity',
  },
- host: 'https://cse341-personalproject.herokuapp.com',
+ host: 'cse341-personalproject.herokuapp.com',
  schemes: ['https'],
 } :
 {
